@@ -1,0 +1,24 @@
+<table border="1">
+  <tr>
+    <th>Posición</th>
+    <th>Logo</th>
+    <th>Nombre</th>
+    <th>Partidos Jugados</th>
+    <th>Partidos Ganados</th>
+    <th>Partidos Empatados</th>
+    <th>Goles a Favor</th>
+    <th>Goles en Contra</th>
+  </tr>
+  {{#each this}}
+  <tr>
+    <td>{{posicion}}</td>
+    <td><img src="{{image}}" alt="{{nombre}}" width="50"></td>
+    <td>{{nombre}}</td>
+    <td>{{partidosJugados}}</td>
+    <td>{{partidosGanados}}</td>
+    <td>{{partidosEmpatados}}</td>
+    <td>{{golesAFavor}}</td>
+    <td>{{golesEnContra}}</td>
+  </tr>
+  {{/each}}
+</table>
